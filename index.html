@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body ng-app = "changeApp">  
+    <div ng-controller="changeCtrl as vm">
+        <h1 ng-click="vm.changeCalc()">Change Calculator!</h1>
+        <div class="title">
+            <p>How much is due for the sale?</p>
+        <input id="amtDue" type="text" ng-model="vm.arrayData.due" ng-blur="vm.changeCalc()"
+          size="30" placeholder="How Much is Due?">
+        </div>
+        <div class ="title">
+            <p>How much has the customer given ou?</p>
+        <input id="amtPaid" type="text" ng-model="vm.arrayData.paid" ng-blur="vm.changeCalc()" 
+            size="30" placeholder ="How Much Paid">
+        </div>
+        
+    <div id = "break">
+        <div class='money'>
+             <h1>Dollars</h1>
+             <p id="dollars"></p> 
+        </div>
+        <div class='money'>
+             <h1>Quarters</h1>
+             <p id="quarters"></p> 
+        </div>
+        <div class="money">
+             <h1>Dimes</h1>
+             <p id="dimes"></p> 
+        </div>
+        <div  class="money">
+             <h1>Nickels</h1>
+             <p id="nickels"></p> 
+        </div>
+        <div class="money">
+             <h1>Pennies</h1>
+             <p id="pennies"></p> 
+
+        </div>
+    </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="app.js" type ="text/javascript"></script>
+  </body>
+</html>
