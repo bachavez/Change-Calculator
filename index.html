@@ -13,7 +13,7 @@
           size="30" placeholder="How Much is Due?">
         </div>
         <div class ="title">
-            <p>How much has the customer given ou?</p>
+            <p>How much has the customer given You?</p>
         <input id="amtPaid" type="text" ng-model="vm.arrayData.paid" ng-blur="vm.changeCalc()" 
             size="30" placeholder ="How Much Paid">
         </div>
@@ -21,23 +21,23 @@
     <div id = "break">
         <div class='money'>
              <h1>Dollars</h1>
-             <p id="dollars"></p> 
+             <p>{{vm.dollars}}</p>
         </div>
         <div class='money'>
              <h1>Quarters</h1>
-             <p id="quarters"></p> 
+             <p>{{vm.quarters}}</p> 
         </div>
         <div class="money">
              <h1>Dimes</h1>
-             <p id="dimes"></p> 
+             <p>{{vm.dimes}}</p> 
         </div>
         <div  class="money">
              <h1>Nickels</h1>
-             <p id="nickels"></p> 
+             <p>{{vm.nickels}}</p> 
         </div>
         <div class="money">
              <h1>Pennies</h1>
-             <p id="pennies"></p> 
+             <p>{{vm.pennies}}</p> 
 
         </div>
     </div>

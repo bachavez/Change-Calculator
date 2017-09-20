@@ -43,12 +43,19 @@ angular.module('changeApp', [])
     
         console.log(change);
     var pennies = Math.floor(change / denominations.penny);
+
+    vm.dollars=dollars;
+    vm.quarters=quarters;
+    vm.dimes=dimes;
+    vm.nickels=nickels;
+    vm.pennies=pennies;
     
-    $("#dollars").text(dollars);
-    $("#quarters").text(quarters);
-    $("#dimes").text(dimes);
-    $("#nickels").text(nickels);
-    $("#pennies").text(pennies);
+    //Jquery equivalent to Angular
+    // $("#dollars").text(dollars);
+    // $("#quarters").text(quarters);
+    // $("#dimes").text(dimes);
+    // $("#nickels").text(nickels);
+    // $("#pennies").text(pennies);
     }
 
   }
